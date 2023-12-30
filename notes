@@ -1,0 +1,9 @@
+setup
+
+file read
+file write
+is_prime
+ from file
+ add to file
+ 
+If prime output and add to file.
