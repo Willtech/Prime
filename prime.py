@@ -9,7 +9,18 @@
 
 ## setup dependencies
 import sys
+import re
 
+import mpmath
+#@manual{mpmath,
+#  key     = {mpmath},
+#  author  = {The mpmath development team},
+#  title   = {mpmath: a {P}ython library for arbitrary-precision floating-point arithmetic (version 1.3.0)},
+#  note    = {{\tt http://mpmath.org/}},
+#  year    = {2023},
+#}
+
+#Imput handler
 try:
  if sys.argv[1] is not None:
   if sys.argv[1] == "firstrun":
@@ -23,6 +34,7 @@ except:
 if x == 0:
  exit('0 will not be prime');
 
+#Functions
 def fileread(primes):
  primefile = open("_data", "r")
  primes = primefile.read().split(",")
@@ -35,12 +47,27 @@ def filesave(data):
  primefile.write(content)
  primefile.close
 
-primes = [[1], [2], [3], [5], [7], [11], [13], [17], [19], [23], [29], [31], [37], [41], [43], [47], [53], [59], [61], [67], [71]]
+def findprime(x, i):
+ if instance(x / i, int):
+  return(true)
+ else:
+  return(false)
+
+#Development proof
+primes = 1,2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59,61,67,71
 
 filesave(primes)
-primes.clear()
+primes = ""
 primes = fileread(primes)
 
-print(x)
-print(primes)
-print(primes[11])
+print (x)
+print (primes)
+print (primes[11])
+print (int(primes[11]))
+
+#Runtime
+if x == -1: #firstrun
+ arp = 1
+ while len(primes) <= 10000:
+  i = primes
+
