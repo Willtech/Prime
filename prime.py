@@ -6,6 +6,8 @@
 # v0.1 hand coded by HRjJ
 
 #prime.py [number to check] []
+import time
+tt = time.time()
 
 print("Initialise...")
 ## setup dependencies
@@ -108,7 +110,7 @@ if x == -1: #firstrun
     else:
      arp = 1
      x = x + 2
-   printfound(x) #
+#   printfound(x) #
    primes = (*primes, int(x))
   else:
    print (primes)
@@ -119,6 +121,5 @@ filesave(primes)
 fileread(primes)
 # print(primes) #
 print ('Completed creating data to', len(primes)-1, 'Primes');
-exit ('Largest Prime in Index:' + str(primes[len(primes)-1]))
-
-#sample
+print ('Largest Prime in Index:' + str(primes[len(primes)-1]))
+exit ("--- %s Seconds ---" % (time.time() - tt))

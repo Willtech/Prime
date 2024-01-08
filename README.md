@@ -25,4 +25,7 @@ File `_data` contains the raw found prime data.
 
 It should be possible to run with `mpiexec` [Build a Raspberry Pi cluster computer][1]
 
+Professor. Damian A. James Williamson
+
 [1]: https://magpi.raspberrypi.com/articles/build-a-raspberry-pi-cluster-computer
+
