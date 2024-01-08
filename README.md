@@ -6,7 +6,7 @@ A Prime is any number only divisible by 1 and itself searching first that a numb
 
 ### Usage
 
-On first run use `prime.py firstrun` to build the data table. The data table *may be* provided.
+On first run use `prime.py firstrun` to build the data table. The data table *may be* provided. It can find up to 104729 the 10,000th Prime in 6 seconds and can be faster with `mpiexec`
 
 `prime.py [number to check]`
 
