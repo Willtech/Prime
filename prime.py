@@ -57,6 +57,8 @@ def findprime(x, i):
  #print (str(mpf(x)), str(mpf(i))) #
  #print (str(mpf(x) / i)) #
  #print (str(mpf(x) / i).split(".")[1]) #
+ print (mpf(x), i)
+ print (str(mpf(x) / i))
  if str(mpf(x) / i).split(".")[1] == "0":
   print (i, 'Doh!') #
   return(False)
@@ -87,21 +89,20 @@ if x == -1: #firstrun
  arp = 1
  primes = ""
  primes = 1,2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59,61,67,71
- while len(primes) <= 1000:
+ while len(primes) <= 100:
+  arp = 1
   mp.dps = mpf(str(primes[len(primes)-1]))
   x = mpf(str(primes[len(primes)-1]+2))
   if findprime(x, 2):
    i = primes[arp]
    while i < x / i:
-    if findprime(x, i):
+    i = primes[arp]
+    if findprime(mpf(x), i):
      arp = arp + 1
-     i = primes[arp]
     else:
      arp = 1
-     i = primes[arp]
      x = x + 2
    print ("Found", x)
-   arp = 1
    primes = (*primes, int(x))
   else:
    print (primes)
