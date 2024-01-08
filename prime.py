@@ -13,7 +13,7 @@ import sys
 import re
 
 from mpmath import *
-mp.dps = 5000000000 
+mp.dps = 15000000000
 #@manual{mpmath,
 #  key     = {mpmath},
 
@@ -53,18 +53,23 @@ def filesave(data):
  primefile.close
 
 def findprime(x, i):
- mp.dps = len(str(x))
- #print (str(mpf(x)), str(mpf(i))) #
- #print (str(mpf(x) / i)) #
- #print (str(mpf(x) / i).split(".")[1]) #
- print (mpf(x), i)
- print (str(mpf(x) / i))
- if str(mpf(x) / i).split(".")[1] == "0":
-  print (i, 'Doh!') #
-  return(False)
+ j = mpf(x) / i
+ if str(j).split(".")[1] == "0":
+#  printoutput (x, i, j, 'Doh!') #
+  return (False)
  else:
-  print (i, 'Ding!') #
-  return(True)
+#  printoutput (x, i, j, 'Ding!') #
+  return (True)
+
+def printoutput(x, i, j, f):
+ print ('Dividend:', x)
+ print ('Divisor:', i)
+ print ('Quotient:', j, 'from divisor:', i, f)
+ print ('---')
+
+def printfound(x):
+ print ('Found:', x)
+ print ('------')
 
 def createint(i):
  return(int(i))
@@ -89,10 +94,11 @@ if x == -1: #firstrun
  arp = 1
  primes = ""
  primes = 1,2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59,61,67,71
- while len(primes) <= 100:
+ mp.dps = mpf(str(primes[len(primes)-1]))
+ while len(primes) <= 10000:
   arp = 1
-  mp.dps = mpf(str(primes[len(primes)-1]))
   x = mpf(str(primes[len(primes)-1]+2))
+  mp.dps = len(str(x))
   if findprime(x, 2):
    i = primes[arp]
    while i < x / i:
@@ -102,7 +108,7 @@ if x == -1: #firstrun
     else:
      arp = 1
      x = x + 2
-   print ("Found", x)
+   printfound(x) #
    primes = (*primes, int(x))
   else:
    print (primes)
@@ -116,7 +122,3 @@ print ('Completed creating data to', len(primes)-1, 'Primes');
 exit ('Largest Prime in Index:' + str(primes[len(primes)-1]))
 
 #sample
-mp.dps = len(str(primes[len(primes)-1]))
-x = mpf('169')
-i = 13
-print(str(mpf(x) / i))
