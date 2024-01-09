@@ -30,8 +30,9 @@ try:
   if sys.argv[1] == "firstrun":
    x = -1
   else:
-   mp.dps = len(str(int(sys.argv[1])))
-   x = mpf(sys.argv[1])
+   try:
+    mp.dps = str(len(str(int(sys.argv[1]))))
+    x = mpf(str(sys.argv[1]))
    if x < 1:
     x = x * -1
 except:
@@ -54,7 +55,7 @@ def filesave(data):
  primefile.close
 
 def findprime(x, i):
- j = mpf(x) / i
+ j = mpf(x) / createint(i)
  if str(j).split(".")[1] == "0":
 #  printoutput (x, i, j, 'Doh!') #
   return (False)
@@ -76,8 +77,8 @@ def createint(i):
  return(int(i))
 
 #Development proof
-#primes = ""
-#primes = fileread(primes)
+# primes = ""
+# primes = fileread(primes)
 
 #Runtime
 if x == -1: #firstrun
@@ -88,7 +89,9 @@ if x == -1: #firstrun
  mp.dps = mpf(str(len(str(primes[len(primes)-1]))))
  while len(primes) <= 1000000:
   arp = 1
-  x = mpf(str(primes[len(primes)-1]+2))
+  y = str(primes[len(primes)-1])
+  y = int(''.join(filter(str.isdigit, y)))
+  x = mpf(str(createint(y+2)))
   mp.dps = len(str(x))
   if findprime(x, 2):
    i = createint(primes[arp])
