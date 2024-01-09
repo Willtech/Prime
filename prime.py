@@ -18,7 +18,6 @@ from mpmath import *
 mp.dps = 15000000000
 #@manual{mpmath,
 #  key     = {mpmath},
-
 #  author  = {The mpmath development team},
 #  title   = {mpmath: a {P}ython library for arbitrary-precision floating-point arithmetic (version 1.3.0)},
 #  note    = {{\tt http://mpmath.org/}},
@@ -77,18 +76,8 @@ def createint(i):
  return(int(i))
 
 #Development proof
-#primes = 1,2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59,61,67,71
-
-#filesave(primes)
 #primes = ""
 #primes = fileread(primes)
-
-#print (x) #
-#print (primes) #
-#print (len(primes)) #
-#print (primes[11]) #
-#print (createint(primes[11])) #
-#print (len(str(x))) #
 
 #Runtime
 if x == -1: #firstrun
@@ -96,15 +85,15 @@ if x == -1: #firstrun
  arp = 1
  primes = ""
  primes = 1,2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59,61,67,71
- mp.dps = mpf(len(str(primes[len(primes)-1])))
- while len(primes) <= 10000:
+ mp.dps = mpf(str(len(str(primes[len(primes)-1]))))
+ while len(primes) <= 1000000:
   arp = 1
   x = mpf(str(primes[len(primes)-1]+2))
   mp.dps = len(str(x))
   if findprime(x, 2):
-   i = primes[arp]
+   i = createint(primes[arp])
    while i < x / i:
-    i = primes[arp]
+    i = createint(primes[arp])
     if findprime(mpf(x), i):
      arp = arp + 1
     else:
@@ -121,5 +110,7 @@ if x == -1: #firstrun
  fileread(primes)
  # print(primes) #
  print ('Completed creating data to', len(primes)-1, 'Primes');
- print ('Largest Prime in Index:' + str(primes[len(primes)-1]))
+ print ('Largest Prime in Index:' + str(int(''.join(filter(str.isdigit, str(primes[len(primes)-1]))))))
  exit ("--- %s Seconds ---" % (time.time() - tt))
+
+#Main
