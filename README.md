@@ -21,7 +21,7 @@ Output: List of Prime numbers up to the input. If only the output prime or not p
 File `_data` contains the raw found prime data.
 
 ### Operation
-`prime.py` will use the data table of found prime numbers to optimise the search for prime up to the fraction necessary & when searching above found primes will search for additional prime numbers & add these to the data to test the input for prime. This approach is optimised heavily because it is only necessary to check up to the highest fraction divisor of the number already checked n/x. It is a convergance function.
+`prime.py` will use the data table of found prime numbers to optimise the search for prime up to the Vignette Sieve fraction necessary & when searching above found primes will search for additional prime numbers & add these to the data to test the input for prime. This approach is optimised heavily because it is only necessary to check up to the highest fraction divisor of the number already checked n/x. It is a convergance function.
 
 It should be possible to run with `mpiexec` [Build a Raspberry Pi cluster computer][1]
 
