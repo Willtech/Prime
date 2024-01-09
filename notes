@@ -1,9 +1,14 @@
 setup
 
+input number
+input whether to fill missing primes
+
+first run no input fill data file up to some n
+
 file read
 file write
 is_prime
- from file
- add to file
+ from file check up to fraction
+ add to file fraction bigger than file check all not divisible by file up to fraction
  
-If prime output and add to file.
+If prime output
