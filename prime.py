@@ -30,8 +30,11 @@ try:
   if sys.argv[1] == "firstrun":
    x = -1
   else:
-   mp.dps = len(str(int(sys.argv[1])))
-   x = mpf(sys.argv[1])
+   try:
+    mp.dps = len(str(int(sys.argv[1])))
+    x = mpf(str(sys.argv[1]))
+   except:
+    exit ("Input error.")
    if x < 1:
     x = x * -1
 except:
@@ -85,7 +88,7 @@ if x == -1: #firstrun
  arp = 1
  primes = ""
  primes = 1,2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59,61,67,71
- mp.dps = mpf(str(len(str(primes[len(primes)-1]))))
+ mp.dps = mpf(len(str(primes[len(primes)-1])))
  while len(primes) <= 1000000:
   arp = 1
   x = mpf(str(primes[len(primes)-1]+2))
