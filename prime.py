@@ -40,7 +40,7 @@ except:
   mp.dps = 185
   x = mpf('531137992816767098689588206552468627329593117727031923199444138200403559860852242739162502265229285668889329486246501015346579337652707239409519978766587351943831270835393219031728127')
 if x == 0:
- exit('0 will not be prime');
+ exit('0 will not be prime.');
 
 #Functions
 def fileread(primes):
@@ -118,4 +118,5 @@ if x == -1: #firstrun
  exit ("--- %s Seconds ---" % (time.time() - tt))
 
 #Main
+print ('Checking ', str(x).split(".")[0], 'for Prime:') 
 exit('Not yet implement.')
