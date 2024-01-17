@@ -68,7 +68,7 @@ if  len(sys.argv) > 2:
   os.system(exechelp)
   sys.exit(1)
 else:
- m = 1000000
+ m = 1000
 
 if x == 0:
  exit('0 will not be prime.');
@@ -92,10 +92,10 @@ def filesave(data):
 def findprime(x, i):
  j = mpf(x) / createint(i)
  if str(j).split(".")[1] == "0":
-  printoutput (x, i, j, 'Doh!') #
+#  printoutput (x, i, j, 'Doh!') #
   return (False)
  else:
-  printoutput (x, i, j, 'Ding!') #
+#  printoutput (x, i, j, 'Ding!') #
   return (True)
 
 def printoutput(x, i, j, f):
@@ -145,7 +145,7 @@ if x == -1: #firstrun
    print ('Looking for', x)
    exit ('Math error creating _data.');
 
- filesave(primes)
+# filesave(primes)
  fileread(primes)
 #   print(primes) #
  print ('Completed creating data to', len(primes)-1, 'Primes');
