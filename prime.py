@@ -54,11 +54,21 @@ if len(sys.argv) > 1:
  except:
   exechelp = ('py ' + os.path.realpath(__file__) + ' -h')
   os.system(exechelp)
-  sys.exit(0)
+  sys.exit(1)
 else:
  exechelp = ('py ' + os.path.realpath(__file__) + ' -h')
  os.system(exechelp)
- sys.exit(0)
+ sys.exit(1)
+
+if  len(sys.argv) > 2:
+ try:
+  m = mpf(str(sys.argv[2]))
+ except:
+  exechelp = ('py ' + os.path.realpath(__file__) + ' -h')
+  os.system(exechelp)
+  sys.exit(1)
+else:
+ m = 1000000
 
 if x == 0:
  exit('0 will not be prime.');
@@ -94,8 +104,8 @@ def printoutput(x, i, j, f):
  print ('Quotient:', j, 'from divisor:', i, f)
  print ('---')
 
-def printfound(x, m):
- print ('Found: P',str(m).translate(subscript), ' is ', str(x).split(".")[0], sep='')
+def printfound(x, p):
+ print ('Found: P',str(p).translate(subscript), ' is ', str(x).split(".")[0], sep='')
  print ('------')
 
 def createint(i):
@@ -106,17 +116,13 @@ def createint(i):
 # primes = fileread(primes)
 
 #Runtime
+#Firstrun
 if x == -1: #firstrun
  print ("Firstrun: Building _data")
  arp = 1
  primes = ""
  primes = 1,2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59,61,67,71
  mp.dps = mpf(str(len(str(primes[len(primes)-1]))))
- if  len(sys.argv) > 2:
-  try:
-   m = mpf(str(sys.argv[2]))
-  except:
-   m = 1000000
  while len(primes) <= m:
   arp = 1
   y = str(primes[len(primes)-1])

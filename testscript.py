@@ -12,6 +12,18 @@ os.system(exechelp)
 
 print ('---------')
 
+print ('py prime.py firstrun 1000')
+exechelp = ('py ' + os.path.abspath(os.path.dirname(__file__)) + '/prime.py' + ' firstrun 1000')
+os.system(exechelp)
+
+print ('---------')
+
+print ('py prime.py firstrun abc')
+exechelp = ('py ' + os.path.abspath(os.path.dirname(__file__)) + '/prime.py' + ' firstrun abc')
+os.system(exechelp)
+
+print ('---------')
+
 print ('py prime.py --help')
 exechelp = ('py ' + os.path.abspath(os.path.dirname(__file__)) + '/prime.py' + ' --help')
 os.system(exechelp)
