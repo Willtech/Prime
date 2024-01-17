@@ -3,7 +3,7 @@
 # pruns some inputs on prime.py
 # testscript.py script
 # Source Code produced by Willtech 2023
-# v0.1 hand coded by HRjJ
+# v0.2 hand coded by HRjJ
 import os
 
 print ('py prime.py firstrun')

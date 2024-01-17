@@ -3,7 +3,7 @@
 # Takes an input and return all primes up to input
 # prime.py script
 # Source Code produced by Willtech 2023
-# v0.2 hand coded by HRjJ
+# v0.3 hand coded by HRjJ
 import time
 tt = time.time()
 
