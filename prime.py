@@ -4,18 +4,20 @@
 # prime.py script
 # Source Code produced by Willtech 2023
 # v0.2 hand coded by HRjJ
-
-#prime.py [number to check] []
 import time
 tt = time.time()
 
-print("Initialise...")
+#prime.py [number to check] []
+
+# print("Initialise...") #
 ## setup dependencies
 import sys
 import re
+import os
 
 from mpmath import *
 mp.dps = 15000000000
+subscript = str.maketrans("0123456789", "₀₁₂₃₄₅₆₇₈₉")
 #@manual{mpmath,
 #  key     = {mpmath},
 #  author  = {The mpmath development team},
@@ -25,8 +27,21 @@ mp.dps = 15000000000
 #}
 
 #Imput handler
-try:
- if sys.argv[1] is not None:
+if len(sys.argv) > 1:
+ if (sys.argv[1] == "--help" or sys.argv[1] == "-h"):
+  print ('Usage: prime.py [OPTIONS | N]')
+  print ('    Searches using Vignette Sieve up to N for Prime and on completion')
+  print ('    incorporates each new Prime found in _data.')
+  print ('')
+  print ('Options:')
+  print ('  General Options:')
+  print ('    -h, --help                           Print this help and exit')
+  print ('    firstrun [M]                         Operates in firstrun mode to generate')
+  print ('                                         _data file up to 1,000,000th Prime or')
+  print ('                                         when M is specified counts up to a Prime')
+  print ('                                         of that magnitude.')
+  sys.exit(0)
+ try:
   if sys.argv[1] == "firstrun":
    x = -1
   else:
@@ -36,11 +51,20 @@ try:
    finally:
     if x < 1:
      x = x * -1
-except:
-  mp.dps = 185
-  x = mpf('531137992816767098689588206552468627329593117727031923199444138200403559860852242739162502265229285668889329486246501015346579337652707239409519978766587351943831270835393219031728127')
+ except:
+  exechelp = ('py ' + os.path.realpath(__file__) + ' -h')
+  os.system(exechelp)
+  sys.exit(0)
+else:
+ exechelp = ('py ' + os.path.realpath(__file__) + ' -h')
+ os.system(exechelp)
+ sys.exit(0)
+
 if x == 0:
  exit('0 will not be prime.');
+
+if x == 1:
+ exit('1 is self Prime.');
 
 #Functions
 def fileread(primes):
@@ -58,10 +82,10 @@ def filesave(data):
 def findprime(x, i):
  j = mpf(x) / createint(i)
  if str(j).split(".")[1] == "0":
-#  printoutput (x, i, j, 'Doh!') #
+  printoutput (x, i, j, 'Doh!') #
   return (False)
  else:
-#  printoutput (x, i, j, 'Ding!') #
+  printoutput (x, i, j, 'Ding!') #
   return (True)
 
 def printoutput(x, i, j, f):
@@ -70,8 +94,8 @@ def printoutput(x, i, j, f):
  print ('Quotient:', j, 'from divisor:', i, f)
  print ('---')
 
-def printfound(x):
- print ('Found:', x)
+def printfound(x, m):
+ print ('Found: P',str(m).translate(subscript), ' is ', str(x).split(".")[0], sep='')
  print ('------')
 
 def createint(i):
@@ -88,7 +112,12 @@ if x == -1: #firstrun
  primes = ""
  primes = 1,2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59,61,67,71
  mp.dps = mpf(str(len(str(primes[len(primes)-1]))))
- while len(primes) <= 1000000:
+ if  len(sys.argv) > 2:
+  try:
+   m = mpf(str(sys.argv[2]))
+  except:
+   m = 1000000
+ while len(primes) <= m:
   arp = 1
   y = str(primes[len(primes)-1])
   y = int(''.join(filter(str.isdigit, y)))
@@ -103,7 +132,7 @@ if x == -1: #firstrun
     else:
      arp = 1
      x = x + 2
-   printfound(x) #
+   printfound(x, len(primes)) #
    primes = (*primes, int(x))
   else:
    print (primes)
@@ -112,11 +141,11 @@ if x == -1: #firstrun
 
  filesave(primes)
  fileread(primes)
- # print(primes) #
+#   print(primes) #
  print ('Completed creating data to', len(primes)-1, 'Primes');
  print ('Largest Prime in Index:' + str(int(''.join(filter(str.isdigit, str(primes[len(primes)-1]))))))
  exit ("--- %s Seconds ---" % (time.time() - tt))
 
 #Main
-print ('Checking ', str(x).split(".")[0], 'for Prime:') 
+print ('Checking', str(x).split(".")[0], 'for Prime:') 
 exit('Not yet implement.')
