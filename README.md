@@ -35,7 +35,7 @@ Notes: [LinkedIn comments][2]
 
 Optimising further than checking only if a number is not even it is possible to check only if a number is one more or less than a factor of 6 so counting for 5 is +2 for 7 and +4 for 11 and so forth. Then when counting from a high number counting back to a number divisible by 6 if it is 1 less add 4 to the number we started with and if it is 5 less add 2 then continue as previously.
 
-It should be possible to have in addition to a find next Prime function a find next number to check from unknown sequence and find next number from known position in sequence. The approach is to build the functions necessary into firstrun that searches by magnitude providing a prrof and then build main that validates an individual number. The easiest wat to check whether to check a number is to check if it is dividible by 6 and then if it is one number more or less than 6, say if we look at 11 it is  not divisible by 6 and it is one less than 6 so we try. This saves a lot of computation with larger numbers. 
+It should be possible to have in addition to a find next Prime function a find next number to check from unknown sequence and find next number from known position in sequence. The approach is to build the functions necessary into firstrun that searches by magnitude providing a proof and then build main that validates an individual number. The easiest wat to check whether to check a number is to check if it is dividible by 6 and then if it is one number more or less than 6, say if we look at 11 it is  not divisible by 6 and it is one less than 6 so we try. This saves a lot of computation with larger numbers. 
 
 Professor. Damian A. James Williamson
 
