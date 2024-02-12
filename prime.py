@@ -59,16 +59,17 @@ def filesave(data):
 def findprime(x, i):
  j = mpf(x) / i
  if str(j).split(".")[1] == "0":
-#  printoutput (x, i, j, 'Doh!') #
+  printoutput (x, i, j, 'Doh!') #
   return (False)
  else:
-#  printoutput (x, i, j, 'Ding!') #
+  printoutput (x, i, j, 'Ding!') #
   return (True)
 
 def printoutput(x, i, j, f):
- print ('Dividend:', x)
+ print ('Dividend:', int(x))
  print ('Divisor:', i)
  print ('Quotient:', j, 'from divisor:', i, f)
+ print ('Decimal digits of precision:', mp.dps)
  print ('---')
 
 def printfound(x):
@@ -102,7 +103,7 @@ if x == -1: #firstrun
     else:
      arp = 1
      x = x + 2
-   printfound(x) #
+   printfound(int(x)) #
    primes = (*primes, int(x))
   else:
    print (primes)
