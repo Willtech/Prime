@@ -1,0 +1,42 @@
+
+ mp.dps = mpf(str(len(str(primes[len(primes)-1]))))
+ while len(primes) <= m:
+  arp = 1
+  y = str(primes[len(primes)-1])
+  y = int(''.join(filter(str.isdigit, y)))
+  x = mpf(str(createint(y+2)))
+  mp.dps = len(str(x))
+  if findprime(x, 2):
+   i = createint(primes[arp])
+   while i < x / i:
+    i = createint(primes[arp])
+    if findprime(mpf(x), i):
+     arp = arp + 1
+    else:
+     arp = 1
+     x = x + 2
+   printfound(x, len(primes)) #
+   primes = (*primes, int(x))
+  else:
+   print (primes)
+   print ('Looking for', x)
+   exit ('Math error creating _data.');
+
+ filesave(primes)
+ fileread(primes)
+#   print(primes) #
+ print ('Completed creating data to', len(primes)-1, 'Primes');
+ print ('Largest Prime in Index:' + str(int(''.join(filter(str.isdigit, str(primes[len(primes)-1]))))))
+ exit ("--- %s Seconds ---" % (time.time() - tt))
+
+#Main
+print ('Loading data')
+primes = ""
+primes = fileread(primes)
+for y in primes:
+ print (str(int(''.join(filter(str.isdigit, str(y))))))
+
+print ('Checking', str(x).split(".")[0], 'for Prime:')
+# exit('Not yet implement.')
+
+
