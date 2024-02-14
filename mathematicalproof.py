@@ -1,6 +1,14 @@
 #!/usr/bin/python
 from mpmath import *
 mp.dps = 10000
+#@manual{mpmath,
+#  key     = {mpmath},
+#  author  = {The mpmath development team},
+#  title   = {mpmath: a {P}ython library for arbitrary-precision floating-point arithmetic (version 1.3.0)},
+#  note    = {{\tt http://mpmath.org/}},
+#  year    = {2023},
+#}
+
 l = 123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789
 print ('l =', l)
 n = 9
