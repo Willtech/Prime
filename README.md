@@ -45,15 +45,15 @@ Professor. Damian A. James Williamson
 
 ### Reference
 
-<p class="apa-reference style="padding-left: 36px; text-indent: -36px;">The mpmath development team. (2023). mpmath - Python library for arbitrary-precision floating-point arithmetic. Retrieved February 2, 2024, from https://mpmath.org/</p>
+<p class="apa-reference" style="padding-left: 36px; text-indent: -36px;">The mpmath development team. (2023). mpmath - Python library for arbitrary-precision floating-point arithmetic. Retrieved February 2, 2024, from https://mpmath.org/</p>
 
-<p class="apa-reference style="padding-left: 36px; text-indent: -36px;">Mathematics Stack Exchange. (2013). multiplicative function - How to find the nearest multiple of 16 to my given number n - Mathematics Stack Exchange. Retrieved February 2, 2024, from https://math.stackexchange.com/questions/291468/how-to-find-the-nearest-multiple-of-16-to-my-given-number-n</p>
+<p class="apa-reference" style="padding-left: 36px; text-indent: -36px;">Mathematics Stack Exchange. (2013). multiplicative function - How to find the nearest multiple of 16 to my given number n - Mathematics Stack Exchange. Retrieved February 2, 2024, from https://math.stackexchange.com/questions/291468/how-to-find-the-nearest-multiple-of-16-to-my-given-number-n</p>
 
-<p class="apa-reference style="padding-left: 36px; text-indent: -36px;">Stack Overflow. (2010). How to extract numbers from a string in Python? - Stack Overflow. Retrieved February 2, 2024, from https://stackoverflow.com/questions/4289331/how-to-extract-numbers-from-a-string-in-python</p>
+<p class="apa-reference" style="padding-left: 36px; text-indent: -36px;">Stack Overflow. (2010). How to extract numbers from a string in Python? - Stack Overflow. Retrieved February 2, 2024, from https://stackoverflow.com/questions/4289331/how-to-extract-numbers-from-a-string-in-python</p>
 
-<p class="apa-reference style="padding-left: 36px; text-indent: -36px;">Stack Overflow. (2010). python - Checking whether a variable is an integer or not - Stack Overflow. Retrieved February 2, 2024, from https://stackoverflow.com/questions/3501382/checking-whether-a-variable-is-an-integer-or-not</p
+<p class="apa-reference" style="padding-left: 36px; text-indent: -36px;">Stack Overflow. (2010). python - Checking whether a variable is an integer or not - Stack Overflow. Retrieved February 2, 2024, from https://stackoverflow.com/questions/3501382/checking-whether-a-variable-is-an-integer-or-not</p
 
-<p class="apa-reference style="padding-left: 36px; text-indent: -36px;">Phillips, C. (2015). Writing Mathematics in Plain Text Email. Retrieved January 24, 2024, from https://pages.uoregon.edu/ncp/Courses/MathInPlainTextEmail.html</p>
+<p class="apa-reference" style="padding-left: 36px; text-indent: -36px;">Phillips, C. (2015). Writing Mathematics in Plain Text Email. Retrieved January 24, 2024, from https://pages.uoregon.edu/ncp/Courses/MathInPlainTextEmail.html</p>
 
 [1]: https://magpi.raspberrypi.com/articles/build-a-raspberry-pi-cluster-computer
 [2]: https://www.linkedin.com/feed/update/urn:li:activity:7152930677804421120?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7152930677804421120%2C7155347903270522880%29&dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287155347903270522880%2Curn%3Ali%3Aactivity%3A7152930677804421120%29
