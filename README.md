@@ -12,7 +12,7 @@ $py prime.py firstrun
 Firstrun: Building _data
 Completed creating data to 10001 Primes
 Largest Prime in Index:104729
---- 5.714673042297363 Seconds ---
+--- 5.399606943130493 Seconds ---
 ```
 
 #### Future implementation in development
