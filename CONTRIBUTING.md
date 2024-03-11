@@ -7,7 +7,7 @@ New contributors ase most welcome.
 
 Testing and researching code is a fickle affair. There are hundreds of ways to solve most problems compuationally.
 
-Before contirbuting, take time to familiaraise yourself with the research and the operation of the program. You should reaslise the program even the Mathematics works with strings using mpmath (The mpmath development team., 2023).
+Before contirbuting, take time to familiarise yourself with the research and the operation of the program. You should reaslise the program even the Mathematics works with strings using mpmath (The mpmath development team., 2023).
 
 ## Contributing
 
