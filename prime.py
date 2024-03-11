@@ -168,11 +168,24 @@ if x == -1: #firstrun
 print ('Loading data')
 primes = ""
 primes = fileread(primes)
-for y in primes:
- print (str(int(''.join(filter(str.isdigit, str(y))))))
-
 print ('Checking', str(x).split(".")[0], 'for Prime:')
-# exit('Not yet implement.')
+notfound = 1
+if ( ( x - ( x % 6 )  == x - 5 ) or ( x - ( x % 6 ) == x -1 ) ):
+ for y in primes:
+  if int(''.join(filter(str.isdigit, str(y)))) <= int(str(x).split(".")[0]):
+   if int(str(x).split(".")[0]) == int(''.join(filter(str.isdigit, str(y)))):
+    print (str(x).split(".")[0], 'is Prime.')
+    notfound = 0
+    break
+  else:
+   notfound = 0
+   print(str(x).split(".")[0], 'is not Prime.')
+   break
+ if notfound:
+  print (str(x).split(".")[0], 'is possibly prime.')
+else:
+  print(str(x).split(".")[0], 'is not Prime.')
+exit ("--- %s Seconds ---" % (time.time() - tt))
 
 # Ref <<<
 ## The mpmath development team. (2023). mpmath - Python library for arbitrary-precision floating-point arithmetic. Retrieved February 2, 2024, from https://mpmath.org/
