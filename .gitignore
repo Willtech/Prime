@@ -2,6 +2,7 @@
 _data
 
 timing.py
+testing.py
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
