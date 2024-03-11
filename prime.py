@@ -8,7 +8,7 @@ import time
 tt = time.time()
 
 #prime.py [number to check] []
-firstrun = 10000 # Amount of firstrun n for Pn to create in _data
+firstrun = 1000000 # Amount of firstrun n for Pn to create in _data
 
 
 # print("Initialise...") #
@@ -102,10 +102,10 @@ def filesave(data):
 def findprime(x, i):
  j = mpf(x) / createint(i)
  if str(j).split(".")[1] == "0":
-#  printoutput (x, i, j, 'Doh!') #
+  printoutput (x, i, j, 'Doh!') #
   return (False)
  else:
-#  printoutput (x, i, j, 'Ding!') #
+  printoutput (x, i, j, 'Ding!') #
   return (True)
 
 def printoutput(x, i, j, f):
@@ -151,15 +151,15 @@ if x == -1: #firstrun
      arp = 2
      i = createint(primes[arp])
      x = x + 2
-#   printfound(x, len(primes)) #
+   printfound(x, len(primes)) #
    primes = (*primes, int(x))
   else:
    print (primes)
    print ('Looking for', x)
    exit ('Math error creating _data.');
 
-# filesave(primes) # If you output here you can run a `git diff` report
-# fileread(primes)
+ filesave(primes) # If you output here you can run a `git diff` report
+ fileread(primes)
  print(primes) #
  print ('Completed creating data to', len(primes)-1, 'Primes');
  print ('Largest Prime in Index:' + str(int(''.join(filter(str.isdigit, str(primes[len(primes)-1]))))))
