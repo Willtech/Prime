@@ -8,11 +8,11 @@ A Prime is any number only divisible by 1 and itself searching first that a numb
 On first run use `prime.py firstrun` to build the data table. The data table *may be* provided. It can find up to 104729 the 10,000th Prime in under 6 seconds and can possibly be accellerated with `mpiexec`
 
 ```log prime.py firstrun
-$ py prime.py firstrun
+$py prime.py firstrun
 Firstrun: Building _data
-Completed creating data to 10000 Primes
+Completed creating data to 10001 Primes
 Largest Prime in Index:104729
---- 5.88232684135437 Seconds ---
+--- 5.714673042297363 Seconds ---
 ```
 
 #### Future implementation in development
