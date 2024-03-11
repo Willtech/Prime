@@ -156,7 +156,7 @@ if x == -1: #firstrun
    print ('Looking for', x)
    exit ('Math error creating _data.');
 
-# filesave(primes) #
+# filesave(primes) # If you output here you can run a `git diff` report
 # fileread(primes)
 # print(primes) #
  print ('Completed creating data to', len(primes)-1, 'Primes');
