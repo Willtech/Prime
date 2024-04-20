@@ -10,7 +10,7 @@ On first run use `prime.py firstrun` to build the data table. The data table *ma
 ```log prime.py firstrun
 $py prime.py firstrun
 Firstrun: Building _data
-Completed creating data to 10001 Primes
+Completed creating data to 10000 Primes
 Largest Prime in Index:104729
 --- 5.355212926864624 Seconds ---
 ```
