@@ -7,11 +7,11 @@
 import time
 tt = time.time()
 
+print("Initialise...") #
+
 #prime.py [number to check] []
 firstrun = 1000000 # Amount of firstrun n for Pn to create in _data
 
-
-# print("Initialise...") #
 ## setup dependencies
 import sys
 import re
@@ -102,10 +102,10 @@ def filesave(data):
 def findprime(x, i):
  j = mpf(x) / int(i)
  if str(j).split(".")[1] == "0":
-#  printoutput (x, i, j, 'Doh!') #
+  printoutput (x, i, j, 'Doh!') #
   return (False)
  else:
-#  printoutput (x, i, j, 'Ding!') #
+  printoutput (x, i, j, 'Ding!') #
   return (True)
 
 def printoutput(x, i, j, f):
@@ -151,7 +151,7 @@ if x == -1: #firstrun
      i = int(primes[arp])
      x = x + 2
    printfound(x, len(primes)) #
-   primes.append(int(x))
+   primes = (*primes, int(x))
   else:
    print (primes)
    print ('Looking for', x)
