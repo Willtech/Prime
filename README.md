@@ -59,6 +59,6 @@ Professor. Damian A. James Williamson
 <p class="apa-reference" style="padding-left: 36px; text-indent: -36px;">Phillips, C. (2015). Writing Mathematics in Plain Text Email. Retrieved January 24, 2024, from https://pages.uoregon.edu/ncp/Courses/MathInPlainTextEmail.html</p>
 
 [1]: https://magpi.raspberrypi.com/articles/build-a-raspberry-pi-cluster-computer
-[2]: [The Integral of is x Prime](./Images/The%20Integral%20-%20Is%20Prime.png) "Links to WolframAlpha"
+[2]: ./Images/The%20Integral%20-%20Is%20Prime.png
 [3]: https://www.wolframalpha.com/input?i2d=true&i=x+is+natural+number+if+PrimeIntegrate%5B%5C%2840%29n+%3C+Divide%5Bx%2Cn%5D%5C%2841%29%2C%7B%5C%2840%29x+%25+P%E2%82%99+%E2%89%A0+0%5C%2841%29%2CP%E2%82%99%2CP%E2%82%81%7D%5D%3D%E2%8A%A4%E2%88%B4+x+is+Prime
 [4]: https://www.linkedin.com/feed/update/urn:li:activity:7152930677804421120?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7152930677804421120%2C7155347903270522880%29&dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287155347903270522880%2Curn%3Ali%3Aactivity%3A7152930677804421120%29
