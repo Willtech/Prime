@@ -2,6 +2,8 @@
 ## An attempt to optimise the search for Prime.
 
 ### Abstract
+Prime numbers are defined as numbers greater than 1 that have no positive divisors other than 1 and themselves. 1 is self-Prime. The sequence of Prime numbers starts with 2, 3, 5, 7, 11, and so on.
+
 A Prime is any number only divisible by 1 and itself searching first that a number is not even if it divides by 2, optimising using a "Vignette Sieve" that if not only up to n/2 needs to be tested as a divisor, then 3 if not only up to n/3 needs to be tested as divisor, n/5, n/7, n/11, n/13, n/17, n/19, n/23, n/29, n/31 & so on so that only divisibility by a Prime needs to be checked for to prove not Prime & since for example we have ruled out that the number is a factor of three or two so there is no natural number greater than n/3 that can be a divisor.
 
 ### Usage
@@ -28,8 +30,6 @@ File `_data` contains the raw found Prime data.
 [![The Integral of is x Prime](./Images/The%20Integral%20-%20Is%20Prime.png "Links to WolframAlpha")][3]  
 *Image1: The Integral of is x Prime. Professor. Damian A. James Williamson  
 Links to: WolframAlpha*
-
-Prime numbers are defined as numbers greater than 1 that have no positive divisors other than 1 and themselves. 1 is self-Prime. The sequence of Prime numbers starts with 2, 3, 5, 7, 11, and so on.
  
 It should be possible to run with `mpiexec` [Build a Raspberry Pi cluster computer][1]
 
