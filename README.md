@@ -1,8 +1,8 @@
 # Prime
-## An attempt to optimise the search for prime.
+## An attempt to optimise the search for Prime.
 
 ### Abstract
-A Prime is any number only divisible by 1 and itself searching first that a number is not even if it divides by 2, optimising using a "Vignette Sieve" that if not only up to n/2 needs to be tested as a divisor, then 3 if not only up to n/3 needs to be tested as divisor, n/5, n/7, n/11, n/13, n/17, n/19, n/23, n/29, n/31 & so on so that only divisibility by a prime needs to be checked for to prove not prime & since for example we have ruled out that the number is a factor of three or two so there is no natural number greater than n/3 that can be a divisor.
+A Prime is any number only divisible by 1 and itself searching first that a number is not even if it divides by 2, optimising using a "Vignette Sieve" that if not only up to n/2 needs to be tested as a divisor, then 3 if not only up to n/3 needs to be tested as divisor, n/5, n/7, n/11, n/13, n/17, n/19, n/23, n/29, n/31 & so on so that only divisibility by a Prime needs to be checked for to prove not Prime & since for example we have ruled out that the number is a factor of three or two so there is no natural number greater than n/3 that can be a divisor.
 
 ### Usage
 On first run use `prime.py firstrun` to build the data table. The data table *may be* provided. It can find up to 104729 the 10,000th Prime in under 6 seconds and can possibly be accellerated with `mpiexec`
@@ -19,17 +19,17 @@ Largest Prime in Index:104729
 
 `prime.py [number to check]`
 
-Output: List of Prime numbers up to the input. If only the output prime or not prime is required edit `prime.py`.
+Output: List of Prime numbers up to the input. If only the output Prime or not prime is required edit `prime.py`.
 
-File `_data` contains the raw found prime data.
+File `_data` contains the raw found Prime data.
 
 ### Operation
-`prime.py` will use the data table of found prime numbers to optimise the search for prime up to the Vignette Sieve fraction necessary & when searching above found primes will search for additional prime numbers & add these to the data to test the input for prime. This approach is optimised heavily because it is only necessary to check up to the highest fraction divisor of the number already checked n/x. The Vignette Seive is a convergance function I have written as the Integral described in Image1  
+`prime.py` will use the data table of found Prime numbers to optimise the search for Prime up to the Vignette Sieve fraction necessary & when searching above found Primes will search for additional Prime numbers & add these to the data to test the input for Prime. This approach is optimised heavily because it is only necessary to check up to the highest fraction divisor of the number already checked n/x. The Vignette Seive is a convergance function I have written as the Integral described in Image1  
 [![The Integral of is x Prime](./Images/The%20Integral%20-%20Is%20Prime.png "Links to WolframAlpha")][3]  
 *Image1: The Integral of is x Prime. Professor. Damian A. James Williamson  
 Links to: WolframAlpha*
 
-Prime numbers are defined as numbers greater than 1 that have no positive divisors other than 1 and themselves. 1 is self-Prime. The sequence of prime numbers starts with 2, 3, 5, 7, 11, and so on.
+Prime numbers are defined as numbers greater than 1 that have no positive divisors other than 1 and themselves. 1 is self-Prime. The sequence of Prime numbers starts with 2, 3, 5, 7, 11, and so on.
  
 It should be possible to run with `mpiexec` [Build a Raspberry Pi cluster computer][1]
 
