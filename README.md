@@ -29,6 +29,8 @@ File `_data` contains the raw found prime data.
 *Image1: The Integral of is x Prime. Professor. Damian A. James Williamson  
 Links to: WolframAlpha*
 
+Prime numbers are defined as numbers greater than 1 that have no positive divisors other than 1 and themselves. 1 is self-Prime. The sequence of prime numbers starts with 2, 3, 5, 7, 11, and so on.
+ 
 It should be possible to run with `mpiexec` [Build a Raspberry Pi cluster computer][1]
 
 Professor. Damian A. James Williamson
