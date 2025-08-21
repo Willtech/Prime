@@ -28,12 +28,12 @@ File `_data` contains the raw found Prime data.
 ### Operation
 `prime.py` will use the data table of found Prime numbers to optimise the search for Prime up to the Vignette Sieve fraction necessary & when searching above found Primes will search for additional Prime numbers & add these to the data to test the input for Prime. This approach is optimised heavily because it is only necessary to check up to the highest fraction divisor of the number already checked n/x. The Vignette Seive is a convergance function I have written as the Integral described in Image1  
 [![The Integral of is x Prime](./Images/The%20Integral%20-%20Is%20Prime.png "Links to WolframAlpha")][3]  
-*Image1: The Integral of is x Prime. Professor. Damian A. James Williamson  
+*Image1: The Integral of is x Prime. Professor. Damian A. James Williamson Grad.  
 Links to: WolframAlpha*
  
 It should be possible to run with `mpiexec` [Build a Raspberry Pi cluster computer][1]
 
-Professor. Damian A. James Williamson
+Professor. Damian A. James Williamson Grad.
 
 =======
 ## Appendix
@@ -46,7 +46,7 @@ Optimising further than checking only if a number is not even it is possible to 
 
 It should be possible to have in addition to a find next Prime function a find next number to check from unknown sequence and find next number from known position in sequence. The approach is to build the functions necessary into firstrun that searches by magnitude providing a proof and then build main that validates an individual number. The easiest wat to check whether to check a number is to check if it is dividible by 6 and then if it is one number more or less than 6, say if we look at 11 it is  not divisible by 6 and it is one less than 6 so we try. This saves a lot of computation with larger numbers. 
 
-Professor. Damian A. James Williamson
+Professor. Damian A. James Williamson Grad.
 
 ### Reference
 
