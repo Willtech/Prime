@@ -27,9 +27,9 @@ File `_data` contains the raw found Prime data.
 
 ### Operation
 `prime.py` will use the data table of found Prime numbers to optimise the search for Prime up to the Vignette Sieve fraction necessary & when searching above found Primes will search for additional Prime numbers & add these to the data to test the input for Prime. This approach is optimised heavily because it is only necessary to check up to the highest fraction divisor of the number already checked n/x. The Vignette Seive is a convergance function I have written as the Integral described in Image1  
-[![The Integral of is x Prime](./Images/The%20Integral%20-%20Is%20Prime.png "Links to WolframAlpha")][3]  
+[![The Integral of is x Prime](./Images/The%20Integral%20-%20Is%20Prime.png "Links to CoPilot")][5]  
 *Image1: The Integral of is x Prime. Professor. Damian A. James Williamson Grad.  
-Links to: WolframAlpha*
+Links to: CoPilot*
  
 It should be possible to run with `mpiexec` [Build a Raspberry Pi cluster computer][1]
 
@@ -67,3 +67,4 @@ Found this new [video](https://youtu.be/qoJacpk_OXo?si=VLUvbKbs25u8Haav).
 [2]: ./Images/The%20Integral%20-%20Is%20Prime.png
 [3]: https://www.wolframalpha.com/input?i2d=true&i=x+is+natural+number+if+PrimeIntegrate%5B%5C%2840%29n+%3C+Divide%5Bx%2Cn%5D%5C%2841%29%2C%7B%5C%2840%29x+%25+P%E2%82%99+%E2%89%A0+0%5C%2841%29%2CP%E2%82%99%2CP%E2%82%81%7D%5D%3D%E2%8A%A4%E2%88%B4+x+is+Prime
 [4]: https://www.linkedin.com/feed/update/urn:li:activity:7152930677804421120?commentUrn=urn%3Ali%3Acomment%3A%28activity%3A7152930677804421120%2C7155347903270522880%29&dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287155347903270522880%2Curn%3Ali%3Aactivity%3A7152930677804421120%29
+[5]: https://copilot.microsoft.com/shares/pBUTTkkVKKZE1vqdqs1WR
