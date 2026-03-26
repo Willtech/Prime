@@ -35,7 +35,6 @@ It should be possible to run with `mpiexec` [Build a Raspberry Pi cluster comput
 
 Professor. Damian A. James Williamson Grad.
 
-=======
 ## Appendix
 
 ### A:Future Optimisations
@@ -51,8 +50,6 @@ Professor. Damian A. James Williamson Grad.
 
 ### B:Validation
 Found this new [video](https://youtu.be/qoJacpk_OXo?si=VLUvbKbs25u8Haav).
-=======
->>>>>>> refs/remotes/Source/working
 
 ### Reference
 
