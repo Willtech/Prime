@@ -47,9 +47,12 @@ Optimising further than checking only if a number is not even it is possible to 
 It should be possible to have in addition to a find next Prime function a find next number to check from unknown sequence and find next number from known position in sequence. The approach is to build the functions necessary into firstrun that searches by magnitude providing a proof and then build main that validates an individual number. The easiest wat to check whether to check a number is to check if it is dividible by 6 and then if it is one number more or less than 6, say if we look at 11 it is  not divisible by 6 and it is one less than 6 so we try. This saves a lot of computation with larger numbers. 
 
 Professor. Damian A. James Williamson Grad.
+<<<<<<< HEAD
 
 ### B:Validation
 Found this new [video](https://youtu.be/qoJacpk_OXo?si=VLUvbKbs25u8Haav).
+=======
+>>>>>>> refs/remotes/Source/working
 
 ### Reference
 
