@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+  <mrow>
+    <mi>x</mi>
+    <mtext> is natural number if Prime </mtext>
+    <mrow>
+      <msubsup>
+        <mo>&#x222B;</mo>
+        <msub>
+          <mi>P</mi>
+          <mi>n</mi>
+        </msub>
+        <msub>
+          <mi>P</mi>
+          <mn>1</mn>
+        </msub>
+      </msubsup>
+      <mrow>
+        <mo>(</mo>
+        <mi>n</mi>
+        <mo>&lt;</mo>
+        <mfrac>
+          <mi>x</mi>
+          <mi>n</mi>
+        </mfrac>
+        <mo>)</mo>
+        <mi>d</mi>
+        <mo>(</mo>
+        <mi>x</mi>
+        <mo>%</mo>
+        <msub>
+          <mi>P</mi>
+          <mi>n</mi>
+        </msub>
+        <mo>&#x2260;</mo>
+        <mn>0</mn>
+        <mo>)</mo>
+      </mrow>
+      <mo>=</mo>
+      <mo>&#x22A4;</mo>
+    </mrow>
+    <mtext> &#x2234; </mtext>
+    <mi>x</mi>
+    <mtext> is Prime</mtext>
+  </mrow>
+</math>
